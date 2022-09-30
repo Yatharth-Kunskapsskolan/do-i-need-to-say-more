@@ -1,0 +1,88 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+
+</head>
+ 
+<body> 
+    <div class="container">
+    <center>
+        <h1 id="Heading">Collage Website</h1>
+        <hr>
+        <div class="output">
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
+    </div>
+        <div class="form-group">
+            <h3>Say "take my selfie"</h3>
+            <label>Your voice output : </label>
+
+        </div>
+
+        <textarea class="form-control" readonly="true" id="textbox"></textarea>
+       
+       <img src="download.png" width="50" height="50">
+       <button class="btn btn-primary" onclick="start()">START</button>
+    <br>   
+        <label>Press the button to Record</label>
+<br>
+        <label>Your webcam : </label>
+        <div id="camera"></div>
+
+        <br>
+        <hr>
+
+        <label>Your selife Will Display Here: </label>
+        <div id="resultRow" class="output">
+          <div id="result1">
+            <img src="pic1.png" style="width: 30%;">
+          </div>
+
+          <div id="result2">
+            <img src="pic2.png" style="width: 30%;">
+          </div>
+
+          <div id="result3">
+            <img src="pic3.png" style="width: 30%;">
+          </div>
+
+        </div>
+
+
+   
+    </div>
+<h3>Selfies Taken within this app</h3>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="5cc2d486d4ca47310b5b7fa3.webp" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="150129144323-14-top-stories-0129-super-169.jpg" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="selfie.jpeg" alt="New york" style="width: 100%;">
+            </div>
+            <div class="item">
+                <img src="AaaAAaa.webp" alt="New york" style="width: 100%;">
+              </div>
+    </div>
+    <div class="copy_right_footer"> <p>Info-sign icon: <span class="glyphicon glyphicon-info-sign"></span></p>    This website was made by WebsiteDesigners Inc., Yatharth Gupta. All documents are not officially Liscensed. <p>Info-sign icon: <span class="glyphicon glyphicon-info-sign"></span></p>  </div>
+</center>
+    <script src="main.js"></script>
+</body>
+</html>
